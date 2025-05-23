@@ -40,16 +40,17 @@ h1 {
 
 #game-board {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 15px;
     justify-content: center;
     padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-
 .card {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    aspect-ratio: 3 / 4;
     background-color: #565c6f;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -58,13 +59,20 @@ h1 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     visibility: hidden; 
     display: block;
+    border-radius: 10px;
 }
 
 .card.show img {
@@ -86,4 +94,3 @@ h1 {
     background-color: #e64a19;
     transform: scale(1.05); 
 }
-
