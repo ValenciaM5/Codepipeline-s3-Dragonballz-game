@@ -9,6 +9,7 @@ body {
 
 .container {
     width: auto;
+    max-width: 800px;
     margin: 40px auto;
     padding: 30px;
     background-color: #3c404d; 
@@ -28,20 +29,10 @@ h1 {
     color: #adbac7;
 }
 
-.scoreboard {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    font-size: 18px;
-    background-color: #565c6f;
-    padding: 10px;
-    border-radius: 10px;
-}
-
 #game-board {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
     justify-content: center;
     padding: 20px;
     max-width: 600px;
@@ -50,7 +41,7 @@ h1 {
 
 .card {
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 3;
     background-color: #565c6f;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -70,17 +61,16 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    visibility: hidden; 
+    visibility: hidden;
     display: block;
-    border-radius: 10px;
 }
 
 .card.show img {
-    visibility: visible; 
+    visibility: visible;
 }
 
 #start-game {
-    background-color: #ff5722;
+    background-color: #4caf50;
     color: white;
     padding: 12px 24px;
     border: none;
@@ -91,6 +81,6 @@ h1 {
 }
 
 #start-game:hover {
-    background-color: #e64a19;
-    transform: scale(1.05); 
+    background-color: #43a047;
+    transform: scale(1.05);
 }
