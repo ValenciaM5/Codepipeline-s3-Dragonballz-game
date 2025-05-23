@@ -1,26 +1,23 @@
 body {
-    font-family: 'Roboto', sans-serif; 
-    background-color: #282c34; 
-    color: #ffffff; 
+    font-family: 'Roboto', sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    width: auto;
-    max-width: 800px;
+    max-width: 960px;
     margin: 40px auto;
     padding: 30px;
-    background-color: #3c404d; 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); 
-    border-radius: 15px; 
+    background-color: #3c404d;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
 }
 
 h1 {
-    color: #ffcc00; 
-    font-size: 36px;
-    font-family: 'Dragon Ball Z', sans-serif;
+    color: white;
 }
 
 .instructions {
@@ -31,17 +28,16 @@ h1 {
 
 #game-board {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     justify-content: center;
     padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 .card {
-    width: 100%;
-    aspect-ratio: 4 / 3;
+    width: 211.8px;
+    height: 166.2px;
     background-color: #565c6f;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -50,18 +46,13 @@ h1 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    transition: transform 0.2s ease;
-}
-
-.card:hover {
-    transform: scale(1.03);
 }
 
 .card img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-    visibility: hidden;
+    visibility: hidden; 
     display: block;
 }
 
@@ -78,9 +69,21 @@ h1 {
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s, transform 0.3s;
+    
 }
 
 #start-game:hover {
     background-color: #43a047;
     transform: scale(1.05);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: #565c6f;
+    padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
 }
