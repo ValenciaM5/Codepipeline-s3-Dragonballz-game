@@ -77,13 +77,3 @@ h1 {
     transform: scale(1.05);
 }
 
-.scoreboard {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    background-color: #565c6f;
-    padding: 10px;
-    border-radius: 10px;
-    flex-wrap: wrap;
-}
