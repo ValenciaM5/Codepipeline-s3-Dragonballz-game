@@ -14,21 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
     let timeRemaining = 60;
 
     const cardArray = [
-        { name: 'Goku', img: 'images/goku.png' },
-        { name: 'Goku', img: 'images/goku.png' },
-        { name: 'Vegeta', img: 'images/vegeta.png' },
-        { name: 'Vegeta', img: 'images/vegeta.png' },
-        { name: 'Piccolo', img: 'images/piccolo.png' },
-        { name: 'Piccolo', img: 'images/piccolo.png' },
-        { name: 'Gohan', img: 'images/gohan.png' },
-        { name: 'Gohan', img: 'images/gohan.png' },
-        { name: 'Trunks', img: 'images/trunks.png' },
-        { name: 'Trunks', img: 'images/trunks.png' },
-        { name: 'Frieza', img: 'images/frieza.png' },
-        { name: 'Frieza', img: 'images/frieza.png' },
-        { name: 'Cell', img: 'images/cell.png' },
-        { name: 'Cell', img: 'images/cell.png' },
-    ];
+  { name: 'goku', img: 'images/goku.png' },
+  { name: 'goku', img: 'images/goku.png' },
+  { name: 'vegeta', img: 'images/vegeta.png' },
+  { name: 'vegeta', img: 'images/vegeta.png' },
+  { name: 'gohan', img: 'images/gohan.png' },
+  { name: 'gohan', img: 'images/gohan.png' },
+  { name: 'piccolo', img: 'images/piccolo.png' },
+  { name: 'piccolo', img: 'images/piccolo.png' },
+  { name: 'trunks', img: 'images/trunks.png' },
+  { name: 'trunks', img: 'images/trunks.png' }
+];
 
     function shuffle(array) {
         array.sort(() => 0.5 - Math.random());
