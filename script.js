@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   { name: 'vegeta', img: 'images/vegeta.png' },
   { name: 'gohan', img: 'images/gohan.png' },
   { name: 'gohan', img: 'images/gohan.png' },
-  { name: 'piccolo', img: 'images/piccolo.png' },
-  { name: 'piccolo', img: 'images/piccolo.png' },
   { name: 'trunks', img: 'images/trunks.png' },
   { name: 'trunks', img: 'images/trunks.png' }
 ];
