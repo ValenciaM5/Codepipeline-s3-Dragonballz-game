@@ -22,9 +22,6 @@ Game Features:
 
 - Flip cards to reveal Dragon Ball Z characters
 - Match identical pairs to score points
-- Two-player mode for competitive fun
-- Countdown timer to increase the challenge
-- Scoreboard to track each player's progress
 - Built with HTML, CSS, and JavaScript
 
 
